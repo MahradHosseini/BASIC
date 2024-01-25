@@ -1,5 +1,6 @@
 package com.basic.user;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
@@ -9,7 +10,7 @@ import java.time.LocalDate;
  * @author Mahrad Hosseini
  * @version 2.0
  */
-public abstract class User {
+public abstract class User implements Serializable {
     /**
      * To generate unique user ID
      */
@@ -35,24 +36,6 @@ public abstract class User {
      */
     private LocalDate registrationDate;
 
-    /**
-     * Default constructor which initializes a user with a unique ID.
-     */
-    public User(){
-        this.userID = ++counter;
-    }
-
-    /**
-     * Initializes a user with first and last names.
-     *
-     * @param firstName The first name of the user
-     * @param lastName The last name of the user
-     */
-    public User(String firstName, String lastName){
-        this.userID = ++counter;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
 
     /**
      * Initializes a user with first and last names, date of birth, and registration date.
@@ -68,6 +51,28 @@ public abstract class User {
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.registrationDate = registrationDate;
+    }
+
+    /**
+     * Initializes a user with first and last names, date of birth, and registration date.
+     *
+     * @param userID The ID of the user
+     * @param firstName The first name of the user
+     * @param lastName The last name of the user
+     * @param dateOfBirth The date of birth of the user
+     * @param registrationDate the registration date of the user
+     */
+    public User(int userID, String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate){
+        this.userID = userID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.registrationDate = registrationDate;
+        counter = userID;
+    }
+
+    public User() {
+
     }
 
     /**

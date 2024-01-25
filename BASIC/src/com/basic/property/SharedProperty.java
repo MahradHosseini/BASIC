@@ -12,10 +12,6 @@ import java.util.HashMap;
  */
 public class SharedProperty extends Property{
 
-    /**
-     * The default constructor
-     */
-    public SharedProperty(){}
 
     /**
      * Constructs the object with number of bedrooms, number of rooms, city, and price per day
@@ -24,8 +20,8 @@ public class SharedProperty extends Property{
      * @param city The name of the city where it is located
      * @param pricePerDay The price per day
      */
-    public  SharedProperty(int noBedRooms, int noRooms, String city, double pricePerDay){
-        super(noBedRooms, noRooms, city, pricePerDay);
+    public  SharedProperty(int propertyID, int noBedRooms, int noRooms, String city, double pricePerDay){
+        super(propertyID, noBedRooms, noRooms, city, pricePerDay);
     }
 
     /**

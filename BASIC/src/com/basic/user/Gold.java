@@ -31,6 +31,21 @@ public class Gold extends Customer{
 
     /**
      * Constructs the object with first name, last name, date of birth, registration date, preferred payment method, and Gold level
+     * @param userID The ID of the user
+     * @param firstName The first name of the customer
+     * @param lastName The last name of the customer
+     * @param dateOfBirth Date of birth of the customer
+     * @param registrationDate Registration date of the customer
+     * @param preferredPaymentMethod Customer's preferred method of payment
+     * @param goldLevel The Customers gold level
+     */
+    public Gold(int userID, String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate, String preferredPaymentMethod, int goldLevel){
+        super(userID, firstName, lastName, dateOfBirth, registrationDate, preferredPaymentMethod);
+        this.goldLevel = goldLevel;
+    }
+
+    /**
+     * Constructs the object with first name, last name, date of birth, registration date, preferred payment method, and Gold level
      * @param firstName The first name of the customer
      * @param lastName The last name of the customer
      * @param dateOfBirth Date of birth of the customer

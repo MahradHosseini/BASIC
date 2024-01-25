@@ -14,28 +14,6 @@ public class Host extends User {
      */
     private double taxNumber;
 
-    /**
-     * The default constructor
-     */
-    public Host(){}
-
-    /**
-     * Constructs the object with a tax number
-     * @param taxNumber The tax number of the Host
-     */
-    public Host(double taxNumber){
-        this.taxNumber = taxNumber;
-    }
-
-    /**
-     * Constructor that initializes a host with first and last names.
-     *
-     * @param firstName The first name of the host
-     * @param lastName The last name of the host
-     */
-    public Host(String firstName, String lastName){
-        super(firstName, lastName);
-    }
 
     /**
      * Constructor that initializes a host with first and last names, date of birth, registration date, and tax number
@@ -49,6 +27,25 @@ public class Host extends User {
     public Host(String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate, double taxNumber){
         super(firstName, lastName, dateOfBirth, registrationDate);
         this.taxNumber = taxNumber;
+    }
+
+    /**
+     * Constructor that initializes a host with first and last names, date of birth, registration date, and tax number
+     *
+     * @param userID The ID of the user
+     * @param firstName The first name of the host
+     * @param lastName The last name of the host
+     * @param dateOfBirth The date of birth of the host
+     * @param registrationDate The date when the host was registered
+     * @param taxNumber The host's tax number
+     */
+    public Host(int userID, String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate, double taxNumber){
+        super(userID, firstName, lastName, dateOfBirth, registrationDate);
+        this.taxNumber = taxNumber;
+    }
+
+    public Host() {
+        super();
     }
 
     /**

@@ -17,16 +17,18 @@ public class FullProperty extends Property{
      */
     private double propertySize;
 
-    /**
-     * The default constructor
-     */
-    public FullProperty(){}
 
     /**
-     * Constructs the object with given Property Size
-     * @param propertySize The Size of the Property
+     * Constructs the object with given values such as number of bedrooms, number of rooms
+     * name of the city, price per day, host, and property size
+     * @param noBedRooms Number of bedrooms
+     * @param noRooms Number of rooms
+     * @param city The name the city where it is located
+     * @param pricePerDay Price per day
+     * @param propertySize The size of the property
      */
-    public FullProperty(double propertySize){
+    public FullProperty(int propertyID, int noBedRooms, int noRooms, String city, double pricePerDay, double propertySize){
+        super(propertyID, noBedRooms, noRooms, city, pricePerDay);
         this.propertySize = propertySize;
     }
 

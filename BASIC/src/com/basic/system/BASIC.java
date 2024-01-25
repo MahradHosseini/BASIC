@@ -1,14 +1,17 @@
 package com.basic.system;
 
 import com.basic.dataio.DataIO;
+import com.basic.dataio.DataStorage;
 import com.basic.exception.*;
 import com.basic.booking.Booking;
+import com.basic.security.SerializeAndDigest;
 import com.basic.user.*;
 import com.basic.property.*;
-import com.basic.populatedata.PopulateData;
+import com.basic.GUI.MainMenuGUI;
 
 import javax.swing.*;
-import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -25,15 +28,12 @@ import java.util.Scanner;
  * @version 2.0
  */
 public class BASIC {
-    /**
-     * To keep a list of Users
-     */
     public ArrayList<User> users;
-    /**
-     * To keep a list of Properties
-     */
+
     public ArrayList<Property> properties;
     public Scanner scanner;
+    public ArrayList<Integer> deletedUserIDs;
+    public ArrayList<Integer> deletedPropertyIDs;
 
     /**
      * Default constructor initializing empty lists for users and properties
@@ -42,6 +42,8 @@ public class BASIC {
     public BASIC() {
         this.users = new ArrayList<>();
         this.properties = new ArrayList<>();
+        this.deletedUserIDs = new ArrayList<>();
+        this.deletedPropertyIDs = new ArrayList<>();
         this.scanner = new Scanner(System.in);
     }
 
@@ -220,7 +222,7 @@ public class BASIC {
                 users.add(new Gold(firstName, lastName, dateOfBirth, registrationDate, preferredPaymentMethod, goldLevel));
             }
         }
-        DataIO.writeUserList(users);
+        //DataIO.writeUserList(users);
     }
 
     /**
@@ -364,7 +366,7 @@ public class BASIC {
         } else {
             properties.add(new FullProperty(noBedrooms, noRooms, city, pricePerDay, host, propertySize));
         }
-        DataIO.writePropertyList(properties);
+        //DataIO.writePropertyList(properties);
     }
 
     /**
@@ -828,13 +830,44 @@ public class BASIC {
      */
     public static void main(String[] args) {
         BASIC basic = new BASIC();
-        basic.users = DataIO.readUserList();
-        basic.properties = DataIO.readPropertyList();
+        Thread MD5VerificationThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                if(!Files.exists(Paths.get("MD5.txt")) | !Files.exists(Paths.get("User.txt"))){
+                    JOptionPane.showMessageDialog(null, "Security files (MD5 or User) are missing!");
+                } else{
+                    if(!SerializeAndDigest.verifyMD5()){
+                        JOptionPane.showMessageDialog(null, "The User.txt file has been manipulated!");
+                    }
+                }
+            }
+        });
+
+        MD5VerificationThread.start();
+        DataStorage.readData(basic);
         MainMenuGUI mainMenuGUI = new MainMenuGUI(basic);
 
+
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    DataStorage.writeData(basic);
+                    SerializeAndDigest.serializeUsers(basic.users);
+                    SerializeAndDigest.generateMD5();
+                }catch (Exception e){
+                    System.out.println("Failed to save data: " + e.getMessage());
+                }
+            }
+        }));
+
+
+        // These Classes are not used for this assignment:
+        // ------------------------------------------------------------------------------
         //PopulateData.populate(basic);
+        //basic.users = DataIO.readUserList();
+        //basic.properties = DataIO.readPropertyList();
         //basic.menu();
-
-
+        // ------------------------------------------------------------------------------
     }
 }

@@ -43,32 +43,11 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
      * Each Property can have up to 1 Inspection per day
      * The key for the HashMap is the current date
      */
-    private final HashMap<LocalDate, String> inspection;
+    private HashMap<LocalDate, String> inspection = new HashMap<>();
     /**
      * The Host object who owns this Property
      */
     private Host host;
-
-    /**
-     * Default constructor that initializes a property with a unique ID and HashMap.
-     */
-    public Property() {
-        this.propertyID = ++counter;
-        this.inspection = new HashMap<>();
-    }
-
-    /**
-     * Constructor that initializes a property with a specified number of bedrooms and rooms.
-     *
-     * @param noBedRooms the number of bedrooms
-     * @param noRooms    the total number of rooms
-     */
-    public Property(int noBedRooms, int noRooms) {
-        this.propertyID = ++counter;
-        this.noBedRooms = noBedRooms;
-        this.noRooms = noRooms;
-        this.inspection = new HashMap<>();
-    }
 
     /**
      * Constructor that initializes a property with the specified number of bedrooms, rooms,
@@ -85,7 +64,6 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
         this.noRooms = noRooms;
         this.city = city;
         this.pricePerDay = pricePerDay;
-        this.inspection = new HashMap<>();
     }
 
     /**
@@ -105,7 +83,6 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
         this.city = city;
         this.pricePerDay = pricePerDay;
         this.host = host;
-        this.inspection = new HashMap<>();
     }
 
     /**
@@ -130,8 +107,28 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
     }
 
     /**
+     * Constructor that initializes a property with the specified number of bedrooms, rooms,
+     * city, price per day, host, and inspection.
+     *
+     * @param propertyID  the ID of the property
+     * @param noBedRooms  the number of bedrooms
+     * @param noRooms     the total number of rooms
+     * @param city        the city where the property is located
+     * @param pricePerDay the price per day for renting the property
+     */
+    public Property(int propertyID, int noBedRooms, int noRooms, String city, double pricePerDay) {
+        this.propertyID = propertyID;
+        this.noBedRooms = noBedRooms;
+        this.noRooms = noRooms;
+        this.city = city;
+        this.pricePerDay = pricePerDay;
+        counter = propertyID;
+    }
+
+    /**
      * Adds a new row to the Inspection HashMap, used for Data Population purposes.
-     * @param key The key of the HashMap as a LocalDate
+     *
+     * @param key  The key of the HashMap as a LocalDate
      * @param text The Inspection Text
      */
     public void addHashMap(LocalDate key, String text) {
@@ -140,6 +137,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
 
     /**
      * Overrides the toString() method to print the details of the Property
+     *
      * @return Property details as a String
      */
     public String toString() {
@@ -149,12 +147,18 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
                 .append("Number of Rooms: ").append(noRooms).append("\n")
                 .append("City: ").append(city).append("\n")
                 .append("Price Per Day: ").append(pricePerDay).append("$").append("\n")
-                .append("Host: ").append(host.getFirstName()).append(" ").append(host.getLastName()).append("\n")
-                .append("Host ID: ").append(host.getUserID()).append("\n")
-                .append("Inspections: \n");
+                .append("Host: \n");
+        if (host == null) {
+            result.append("No Host have been assigned to this property\n");
+        } else {
+            result.append(host.getFirstName()).append(" ").append(host.getLastName()).append("\n")
+                    .append("Host ID: ").append(host.getUserID()).append("\n");
+        }
+
+        result.append("Inspections: \n");
 
         if (inspection.isEmpty()) {
-            result.append("No Inspections Have Been Added Yet\n");
+            result.append("No Inspection have been added\n");
         } else {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
 
@@ -170,6 +174,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
 
     /**
      * Adds an Inspection Text to the map using current date as the key
+     *
      * @param inspectionText The Inspection text that is to be added
      */
     public void addInspection(String inspectionText) {
@@ -308,6 +313,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
 
     /**
      * Sets the price of the property per day
+     *
      * @param pricePerDay The price of the property per day
      */
     public void setPricePerDay(double pricePerDay) {
@@ -316,6 +322,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
 
     /**
      * Gets the Inspection HashMap
+     *
      * @return The Inspection HashMap
      */
     public HashMap<LocalDate, String> getInspection() {
@@ -324,6 +331,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
 
     /**
      * Compares two Properties based on their price per day
+     *
      * @param otherProperty the object to be compared.
      * @return The result of the comparison
      */

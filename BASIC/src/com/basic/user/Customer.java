@@ -30,6 +30,7 @@ public abstract class Customer extends User {
      * The default constructor
      */
     public Customer() {
+        super();
     }
 
     /**
@@ -37,6 +38,21 @@ public abstract class Customer extends User {
      * @param preferredPaymentMethod
      */
     public Customer(String preferredPaymentMethod) {
+        this.preferredPaymentMethod = preferredPaymentMethod;
+        this.bookings = new ArrayList<>();
+    }
+
+    /**
+     * Constructs the object with first name, last name, date of birth, registration date, and preferred payment method
+     * @param userID The ID of the user
+     * @param firstName The first name of the customer
+     * @param lastName The last name of the customer
+     * @param dateOfBirth Date of birth of the customer
+     * @param registrationDate Registration date of the customer
+     * @param preferredPaymentMethod Customer's preferred method of payment
+     */
+    public Customer(int userID, String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate, String preferredPaymentMethod) {
+        super(userID, firstName, lastName, dateOfBirth, registrationDate);
         this.preferredPaymentMethod = preferredPaymentMethod;
         this.bookings = new ArrayList<>();
     }
