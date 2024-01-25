@@ -1,6 +1,7 @@
 package com.basic.user;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 /**
  * Represents the Standard Customer
@@ -39,6 +40,20 @@ public class Standard extends Customer{
     public String toString(){
         return super.toString() + "\n" +
                 "User Type: Standard";
+    }
+
+    public double discountPercentage(){
+        LocalDate registrationDate = getRegistrationDate();
+        LocalDate currentDate = LocalDate.now();
+
+        Period period = Period.between(registrationDate, currentDate);
+        int yearsDiff = period.getYears();
+
+        if (yearsDiff >= 10) {
+            return 0.98;
+        }else{
+            return 1;
+        }
     }
 
 }

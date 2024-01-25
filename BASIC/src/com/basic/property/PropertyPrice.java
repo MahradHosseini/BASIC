@@ -3,7 +3,7 @@ package com.basic.property;
 /**
  * Represents an interface to calculate the price per day for different types of properties
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public interface PropertyPrice {
     /**

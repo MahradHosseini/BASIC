@@ -67,4 +67,14 @@ public class Gold extends Customer{
     public void setGoldLevel(int goldLevel) {
         this.goldLevel = goldLevel;
     }
+
+    public double discountPercentage(){
+        if (goldLevel == 1) {
+            return 0.99;
+        } else if (goldLevel == 2) {
+            return 0.98;
+        } else{
+            return 0.97;
+        }
+    }
 }

@@ -3,7 +3,7 @@ package com.basic.exception;
 /**
  * Activated when the Gold Level input is not in the range
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public class GoldLevelException extends Exception{
 

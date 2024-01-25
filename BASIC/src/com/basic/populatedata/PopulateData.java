@@ -1,18 +1,23 @@
 package com.basic.populatedata;
 
 import com.basic.booking.Booking;
+import com.basic.dataio.DataIO;
 import com.basic.property.*;
 import com.basic.user.*;
 import com.basic.system.BASIC;
 
+import javax.xml.crypto.Data;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Represents a class of automatic data population.
  * Populates Users, Properties, Hosts, and Bookings.
+ * Removed******
  *
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public class PopulateData {
     /**
@@ -50,6 +55,7 @@ public class PopulateData {
         system.users.add(host2);
         system.users.add(host3);
 
+        DataIO.writeUserList(system.users);
 
         FullProperty fullProperty1 = new FullProperty(2, 2, "Iskele", 100, host2, 150);
         FullProperty fullProperty2 = new FullProperty(3, 3, "Girne", 300, host1, 435);
@@ -63,6 +69,16 @@ public class PopulateData {
 
         SharedProperty sharedProperty1 = new SharedProperty(2, 2, "Magusa", 200, host3);
         system.properties.add(sharedProperty1);
+
+        DataIO.writeUserList(system.users);
+        DataIO.writePropertyList(system.properties);
+        List<User> usr = new ArrayList<>();
+        List<Property> prprty = new ArrayList<>();
+
+        prprty = DataIO.readPropertyList();
+        usr = DataIO.readUserList();
+        System.out.println(usr);
+        System.out.println(prprty);
 
     }
 

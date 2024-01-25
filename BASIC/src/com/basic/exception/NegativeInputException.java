@@ -3,7 +3,7 @@ package com.basic.exception;
 /**
  * Activated when the input is not in positive
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public class NegativeInputException extends Exception{
 

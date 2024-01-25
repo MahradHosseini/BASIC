@@ -11,7 +11,7 @@ import java.util.*;
  * Each property is associated with a host and an Inspection (Not compulsory).
  *
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public abstract class Property implements PropertyPrice, Comparable<Property> {
     /**
@@ -109,6 +109,27 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
     }
 
     /**
+     * Constructor that initializes a property with the specified number of bedrooms, rooms,
+     * city, price per day, host, and inspection.
+     *
+     * @param noBedRooms  the number of bedrooms
+     * @param noRooms     the total number of rooms
+     * @param city        the city where the property is located
+     * @param pricePerDay the price per day for renting the property
+     * @param host        the host who owns the property
+     * @param inspection  the inspection HashMap
+     */
+    public Property(int noBedRooms, int noRooms, String city, double pricePerDay, Host host, HashMap<LocalDate, String> inspection) {
+        this.propertyID = ++counter;
+        this.noBedRooms = noBedRooms;
+        this.noRooms = noRooms;
+        this.city = city;
+        this.pricePerDay = pricePerDay;
+        this.host = host;
+        this.inspection = inspection;
+    }
+
+    /**
      * Adds a new row to the Inspection HashMap, used for Data Population purposes.
      * @param key The key of the HashMap as a LocalDate
      * @param text The Inspection Text
@@ -154,11 +175,7 @@ public abstract class Property implements PropertyPrice, Comparable<Property> {
     public void addInspection(String inspectionText) {
         LocalDate currentDate = LocalDate.now();
 
-        if (inspection.containsKey(currentDate)) {
-            System.out.println("An Inspection Exists For The Current Date! ");
-        } else {
-            inspection.put(currentDate, inspectionText);
-        }
+        inspection.put(currentDate, inspectionText);
     }
 
     // Getters and Setters

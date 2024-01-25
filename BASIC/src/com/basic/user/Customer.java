@@ -72,6 +72,11 @@ public abstract class Customer extends User {
         return bookings;
     }
 
+    public void addBooking(Property property, LocalDate startDate, LocalDate endDate, boolean isPaid){
+        Booking booking = new Booking(property, startDate, endDate, isPaid);
+        bookings.add(booking);
+    }
+
     /**
      * Adds a booking to the user's list of bookings.
      *
@@ -116,28 +121,7 @@ public abstract class Customer extends User {
         this.bookings.add(booking);
     }
 
-    public double discountPercentage() {
-        if (this instanceof Gold) {
-            if (((Gold) this).getGoldLevel() == 1) {
-                return 0.99;
-            } else if (((Gold) this).getGoldLevel() == 2) {
-                return 0.98;
-            } else if (((Gold) this).getGoldLevel() == 3) {
-                return 0.97;
-            }
-        } else if (this instanceof Standard) {
-            LocalDate registrationDate = getRegistrationDate();
-            LocalDate currentDate = LocalDate.now();
-
-            Period period = Period.between(registrationDate, currentDate);
-            int yearsDiff = period.getYears();
-
-            if (yearsDiff >= 10) {
-                return 0.98;
-            }
-        }
-        return 1;
-    }
+    public abstract double discountPercentage();
 
     /**
      * Gets the Customer's preferred method of payment

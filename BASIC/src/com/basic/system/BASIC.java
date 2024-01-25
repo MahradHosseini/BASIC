@@ -1,11 +1,14 @@
 package com.basic.system;
 
+import com.basic.dataio.DataIO;
 import com.basic.exception.*;
 import com.basic.booking.Booking;
 import com.basic.user.*;
 import com.basic.property.*;
 import com.basic.populatedata.PopulateData;
 
+import javax.swing.*;
+import java.io.IOException;
 import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -206,6 +209,20 @@ public class BASIC {
         return null;
     }
 
+
+    public void addUser(String firstName, String lastName, LocalDate dateOfBirth, LocalDate registrationDate, String userType, String customerType, int goldLevel, double taxNumber, String preferredPaymentMethod) {
+        if (userType.equals("Host")) {
+            users.add(new Host(firstName, lastName, dateOfBirth, registrationDate, taxNumber));
+        } else {
+            if (customerType.equals("Standard")) {
+                users.add(new Standard(firstName, lastName, dateOfBirth, registrationDate, preferredPaymentMethod));
+            } else {
+                users.add(new Gold(firstName, lastName, dateOfBirth, registrationDate, preferredPaymentMethod, goldLevel));
+            }
+        }
+        DataIO.writeUserList(users);
+    }
+
     /**
      * Adds a new user by prompting for user details.
      */
@@ -301,6 +318,7 @@ public class BASIC {
                 System.out.println("Please Enter a Valid Option! ");
             }
         }
+        DataIO.writeUserList(users);
         System.out.println("New user has been added");
     }
 
@@ -315,10 +333,13 @@ public class BASIC {
 
         if (userToRemove != null) {
             users.remove(userToRemove);
+            DataIO.writeUserList(users);
             System.out.println("User with ID " + userID + " has been deleted");
         } else {
             System.out.println("User with ID " + userID + " does not exist");
         }
+
+        DataIO.writeUserList(users);
     }
 
     /**
@@ -335,6 +356,15 @@ public class BASIC {
         } else {
             System.out.println("User with ID " + userID + " does not exist");
         }
+    }
+
+    public void addProperty(int noBedrooms, int noRooms, String city, int pricePerDay, String propertyType, Host host, int propertySize) {
+        if (propertyType.equals("SharedProperty")) {
+            properties.add(new SharedProperty(noBedrooms, noRooms, city, pricePerDay, host));
+        } else {
+            properties.add(new FullProperty(noBedrooms, noRooms, city, pricePerDay, host, propertySize));
+        }
+        DataIO.writePropertyList(properties);
     }
 
     /**
@@ -440,7 +470,7 @@ public class BASIC {
 
                 host = new Host(firstName, lastName, dateOfBirth, dateOfRegistration, taxNumber);
                 users.add(host);
-
+                DataIO.writeUserList(users);
                 validHostID = true;
 
             } else {
@@ -497,7 +527,7 @@ public class BASIC {
                 System.out.println("Please Enter a valid option! ");
             }
         }
-
+        DataIO.writePropertyList(properties);
         System.out.println("New Property has been added");
     }
 
@@ -513,6 +543,7 @@ public class BASIC {
 
         if (propertyToRemove != null) {
             properties.remove(propertyToRemove);
+            DataIO.writePropertyList(properties);
             System.out.println("Property with ID " + propertyID + " has been deleted");
         } else {
             System.out.println("Property with ID " + propertyID + " does not exist");
@@ -533,6 +564,12 @@ public class BASIC {
         } else {
             System.out.println("Property with ID " + propertyID + " does not exist");
         }
+    }
+
+    public void addBooking(int customerID, int propertyID, LocalDate startDate, LocalDate endDate, boolean isPaid) {
+        Customer customer = findCustomerByID(customerID);
+        Property property = findPropertyByID(propertyID);
+        customer.addBooking(property, startDate, endDate, isPaid);
     }
 
     /**
@@ -673,6 +710,7 @@ public class BASIC {
     public void addInspectionToProperty(int propertyID, String inspectionText) {
         Property property = findPropertyByID(propertyID);
         property.addInspection(inspectionText);
+        DataIO.writePropertyList(properties);
     }
 
     /**
@@ -788,9 +826,15 @@ public class BASIC {
      *
      * @param args Not used in this application.
      */
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) {
         BASIC basic = new BASIC();
-        PopulateData.populate(basic);
-        basic.menu();
+        basic.users = DataIO.readUserList();
+        basic.properties = DataIO.readPropertyList();
+        MainMenuGUI mainMenuGUI = new MainMenuGUI(basic);
+
+        //PopulateData.populate(basic);
+        //basic.menu();
+
+
     }
 }

@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit;
  * Each booking is identified by a unique booking ID.
  *
  * @author Mahrad Hosseini
- * @version 2.0
+ * @version 3.0
  */
 public class Booking {
     /**
