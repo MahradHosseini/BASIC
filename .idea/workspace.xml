@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96902f39-bd56-4519-9e3c-d71f4e56c918" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BASIC/BASIC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/BASIC.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/FullProperty.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/Gold.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/Host.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/MD5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/SharedProperty.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/Standard.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/User.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/mysql-connector-j-8.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/artifacts/BASIC_jar/BASIC.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/BASIC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/FullProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Gold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Host.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Java/lang/Comparable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Main Menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/PopulateData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Property.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/PropertyPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/SharedProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/Standard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddBookingGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddBookingGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddBookingGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddInspectionGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddInspectionGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddInspectionGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddPropertyGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/AddUserGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ComparePropertiesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ComparePropertiesGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ComparePropertiesGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ComparePropertiesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeletePropertyGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeletePropertyGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeletePropertyGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeleteUserGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeleteUserGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/DeleteUserGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetBookingCostGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetBookingCostGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetBookingCostGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetBookingCostGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetPropertyDetailsGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetPropertyDetailsGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetPropertyDetailsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserBookingGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserBookingGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserBookingGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserDetailsGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserDetailsGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/GetUserDetailsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ListPropertiesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ListPropertiesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ListUsersGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/ListUsersGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/GUI/MainMenuGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/AddBookingGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/AddBookingGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/AddBookingGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetBookingCostGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetBookingCostGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetBookingCostGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetBookingCostGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetUserBookingGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetUserBookingGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/booking/GetUserBookingGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/dataio/DataIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/dataio/DataStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/exception/GoldLevelException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/exception/NegativeInputException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/populatedata/PopulateData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddInspectionGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddInspectionGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddInspectionGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/AddPropertyGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ComparePropertiesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ComparePropertiesGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ComparePropertiesGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ComparePropertiesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/DeletePropertyGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/DeletePropertyGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/DeletePropertyGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/FullProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/GetPropertyDetailsGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/GetPropertyDetailsGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/GetPropertyDetailsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ListPropertiesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/ListPropertiesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/Property.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/PropertyPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/property/SharedProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/security/SerializeAndDigest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/BASIC$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/BASIC$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/BASIC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/system/MainMenuGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/AddUserGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/DeleteUserGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/DeleteUserGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/DeleteUserGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/GetUserDetailsGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/GetUserDetailsGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/GetUserDetailsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/Gold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/Host.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/ListUsersGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/ListUsersGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/Standard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/basic/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/out/production/BASIC/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/BASIC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/Host.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/Java/lang/Comparable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/Main Menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/PopulateData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddBookingGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddBookingGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddInspectionGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddInspectionGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddPropertyGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddPropertyGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddUserGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/AddUserGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ComparePropertiesGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ComparePropertiesGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/DeletePropertyGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/DeletePropertyGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/DeleteUserGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/DeleteUserGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetBookingCostGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetBookingCostGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetPropertyDetailsGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetPropertyDetailsGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetUserBookingGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetUserBookingGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetUserDetailsGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/GetUserDetailsGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ListPropertiesGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ListPropertiesGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ListUsersGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/ListUsersGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/MainMenuGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/GUI/MainMenuGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/AddBookingGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/AddBookingGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/GetBookingCostGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/GetBookingCostGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/GetUserBookingGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/booking/GetUserBookingGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/dataio/DataIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/dataio/DataStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/exception/GoldLevelException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/exception/NegativeInputException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/populatedata/PopulateData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/AddInspectionGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/AddInspectionGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/AddPropertyGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/AddPropertyGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/ComparePropertiesGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/ComparePropertiesGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/DeletePropertyGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/DeletePropertyGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/FullProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/GetPropertyDetailsGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/GetPropertyDetailsGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/ListPropertiesGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/ListPropertiesGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/PropertyPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/property/SharedProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/security/SerializeAndDigest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/system/BASIC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/system/MainMenuGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/system/MainMenuGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/AddUserGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/AddUserGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/DeleteUserGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/DeleteUserGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/GetUserDetailsGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/GetUserDetailsGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/Gold.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/Host.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/ListUsersGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/ListUsersGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/Standard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASIC/src/com/basic/user/User.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2fGmw3ZtHgf2vBbDt9LT6hFAMDM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Assignment-4",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96902f39-bd56-4519-9e3c-d71f4e56c918" name="Changes" comment="" />
+      <created>1713436032368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713436032368</updated>
+      <workItem from="1713436043006" duration="134000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
